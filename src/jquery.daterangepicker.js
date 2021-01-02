@@ -1549,6 +1549,7 @@
 
         function dayClicked(day) {
             if (day.hasClass('invalid')) return;
+            day.toggleClass('free').toggleClass('busy').removeClass('has-tooltip');
             var time = day.attr('time');
             day.addClass('checked');
             if (opt.singleDate) {
